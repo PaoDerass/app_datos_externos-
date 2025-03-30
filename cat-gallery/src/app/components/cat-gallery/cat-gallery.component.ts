@@ -5,7 +5,7 @@ import { Cat, Breed } from '../../models/cat.model';
 @Component({
   selector: 'app-cat-gallery',
   templateUrl: './cat-gallery.component.html',
-  styleUrls: ['./cat-gallery.component.css']
+  styleUrls: ['./cat-gallery.component.scss']
 })
 export class CatGalleryComponent implements OnInit {
   cats: Cat[] = [];
