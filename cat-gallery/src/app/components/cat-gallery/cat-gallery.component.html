@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Galería de Gatitos 🐱</h1>
+  
+    <select [(ngModel)]="selectedBreed" (change)="filterByBreed()">
+      <option value="">Todas las Razas</option>
+      <option *ngFor="let breed of breeds" [value]="breed.id">{{ breed.name }}</option>
+    </select>
+  
+    <div class="gallery">
+      <div *ngFor="let cat of cats" class="cat-card">
+        <img [src]="cat.url" [alt]="'Gato ' + (cat.id)" />
+      </div>
+    </div>
+  </div>
+  
